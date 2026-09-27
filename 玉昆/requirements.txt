@@ -1,0 +1,14 @@
+# ===== 数据分析与可视化 =====
+pandas>=2.0
+numpy>=1.25
+matplotlib>=3.7
+seaborn>=0.13
+
+# ===== 机器学习 =====
+scikit-learn>=1.3
+xgboost>=2.0
+
+# ===== 网络请求与爬虫（仅 天气挖掘/finddata.py、球员数据/tt.py 使用）=====
+requests>=2.31
+selenium>=4.15
+webdriver-manager>=4.0
