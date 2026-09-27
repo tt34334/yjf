@@ -1,0 +1,10 @@
+{
+  "ownerUserId": 1,
+  "stadiumId": 1,
+  "stadiumName": "伯纳乌球场",
+  "address": "马德里",
+  "startTime": "2026-03-17T18:00:00",
+  "endTime": "2026-03-17T20:00:00",
+  "needSlots": 10,
+  "note": "测试拼场"
+}
