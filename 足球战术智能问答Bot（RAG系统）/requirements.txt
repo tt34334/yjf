@@ -1,0 +1,27 @@
+# File: requirements.txt
+# 足球战术智能问答 RAG 系统 - Python 依赖清单（已在 Python 3.10 ~ 3.12 验证）
+#
+# ────────────────────────────────────────────────────────────────
+# Windows 用户建议先单独安装 CPU 版 torch（体积约 196MB）：
+#   pip install torch==2.5.1+cpu --index-url https://download.pytorch.org/whl/cpu
+# 国内网络可改用阿里云镜像（把 cp312 换成与你 Python 版本一致的标识）：
+#   pip install https://mirrors.aliyun.com/pytorch-wheels/cpu/torch-2.5.1+cpu-cp312-cp312-win_amd64.whl
+# 安装 torch 后再执行 pip install -r requirements.txt 即可。
+#
+# 说明：torch 上限锁定 <2.6 —— 2.6+ 的部分原生 DLL 未做数字签名，
+# 在开启 Windows Smart App Control（智能应用控制）的机器上会被系统拦截，
+# 详见 README「常见问题」。
+# ────────────────────────────────────────────────────────────────
+torch>=2.2,<2.6
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+chromadb>=0.5.0,<2.0.0
+sentence-transformers>=3.0.0
+openai>=1.35.0
+pypdf>=4.2.0
+streamlit>=1.36.0
+requests>=2.32.0
